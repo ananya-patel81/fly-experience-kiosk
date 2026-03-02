@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>FLY: Experience the Pillars</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div id="home" class="screen">
+    <h1>FLY: Experience the Pillars</h1>
+    <p>Which pillar do you want to understand better?</p>
+    <div class="buttons">
+      <button onclick="showModule('initiative')">Taking Initiative</button>
+      <button onclick="showModule('problem')">Problem Solving</button>
+      <button onclick="showModule('conscientiousness')">Conscientiousness</button>
+      <button onclick="showModule('innovation')">Innovation</button>
+      <button onclick="showModule('perseverance')">Perseverance</button>
+    </div>
+  </div>
+
+  <!-- Example Module -->
+  <div id="initiative" class="screen hidden">
+    <h2>Taking Initiative</h2>
+    <p>Your group project deadline is tomorrow. No one has started.</p>
+
+    <button onclick="showOutcome('initiative', true)">Take charge and assign roles</button>
+    <button onclick="showOutcome('initiative', false)">Wait for someone else to start</button>
+
+    <div id="initiative-outcome" class="outcome"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
